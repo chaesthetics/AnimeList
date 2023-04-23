@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Hunter X Hunter", "genre": "Action, Drama", "picture": "https://m.media-amazon.com/images/M/MV5BMGU1OWFjNGMtZTVkNS00NDcxLWI0YmEtMDgxYjBmMDdlNTRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+    },
+    {
+        "title": "Naruto", "genre": "Comedy, Adventure", "picture": "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg"
+    },
+    {
+        "title": "Boku no Piko", "genre": "Romance, Yotyot", "picture": "https://cdn.myanimelist.net/images/anime/12/39497.jpg"
+    },
+    {
+        "title": "Demon Slayer", "genre": "Action, adventure", "picture": "https://m.media-amazon.com/images/M/MV5BODI2NjdlYWItMTE1ZC00YzI2LTlhZGQtNzE3NzA4MWM0ODYzXkEyXkFqcGdeQXVyNjU1OTg4OTM@._V1_.jpg"
+    },
+    {
+        "title": "Highschool DXD", "genre": "Romance, Yotyot", "picture": "https://upload.wikimedia.org/wikipedia/en/e/e2/High_School_DxD_Volume_1.png"
+    },
+    {
+        "title": "Jujutsu Kaisen", "genre": "Fantasy", "picture": "https://pbs.twimg.com/media/FokNTBcaYAAIvlc.jpg:large"
+    },
+    {
+        "title": "Dr.Stone", "genre": "Adventure Post-apocalyptic Science fiction", "picture": "https://m.media-amazon.com/images/M/MV5BYmU2MzEyMjAtOTQ5Yy00NGMxLTg0NmItMTQ0ZTM5OGY0NjUzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+    }
+]
