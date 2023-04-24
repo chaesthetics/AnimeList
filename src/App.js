@@ -8,6 +8,7 @@ import Thumbnails from "./components/Thumbnails.js";
 function App(){
 
   const [endPoint, setEndpoint] = useState("")
+  const [items, setItems] = useState([])
 
   useEffect(()=>{
     fetchMe()
@@ -19,23 +20,26 @@ function App(){
 	method: 'GET',
 	headers: {
 		'content-type': 'application/octet-stream',
-		'X-RapidAPI-Key': '3cc025931bmsh52e704d3872aad7p1301cejsna5601d2337ab',
+		'X-RapidAPI-Key': 'e6adebb610mshdbd19c87228bf56p18fef2jsn7452b0a7b163',
 		'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
 	}
 };
 
 
-fetch('https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=+${endPoint}', options)
+fetch(`https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=${endPoint}`, options)
 .then(response => {
   return response.json()
   })
-.then(data => console.log(data))
+.then(data => setItems(data.data))
 }
 
   const valueSetter = (event) =>{
     setEndpoint(event.target.value)
   }
   
+  const animeList = items.map((result)=>{
+    return <Thumbnails title={result.title} picture={result.image} status={result.status} type={result.type} link={result.link}/>
+  })
   
   return (
     <div className="App">
@@ -47,10 +51,11 @@ fetch('https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=+${endPoint}'
             <input type="text"  onChange={valueSetter} placeholder="🔍︎ Search your favorite anime..."/>
             <button>Search</button>
           </div>
-          <h1>Welcome to my {endPoint}</h1>
+          <h3>Welcome to the place where you can find complete list of all animes</h3>
         </div>
 
         <div className="container">
+          {animeList}
         </div>
         <Footer />
       </header>

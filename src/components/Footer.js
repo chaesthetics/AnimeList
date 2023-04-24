@@ -5,7 +5,7 @@ function Footer(){
         <>
         
         <div  className="Footer">
-            <p>© 2023 Fernandez, All Rights Reserved</p>
+            <p>© 2023 Auriel James V. Fernandez, All Rights Reserved</p>
         </div>
         </>
     )

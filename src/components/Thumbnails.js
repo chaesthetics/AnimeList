@@ -6,9 +6,9 @@ function Thumbnails(props){
             <div className="Thumbnails">
                 <img src={props.picture}/>
                 <div className="nailBody">
-                    <p className="title">Title: {props.title}</p>
-                    <p className="genre">Genre: {props.genre}</p>
-                    <p className="ratings">Ratings: ⭐⭐⭐</p>
+                    <p className="title">Title: <a href={props.link}>{props.title}</a></p>
+                    <p className="genre">Type: {props.type}</p>
+                    <p className="ratings">Status: {props.status}</p>
                 </div>
             </div>
         
