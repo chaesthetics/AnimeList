@@ -1,0 +1,25 @@
+
+useEffect(() => {
+    fetchMe()
+  },[endPoint])
+
+  const fetchMe = () => {
+
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '12c795e279msh29d4f743dcc07e4p1f75fbjsnb5ac1f6edd91',
+      'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
+    }
+  };
+
+  fetch(https://anime-db.p.rapidapi.com/anime?page=1&size=10&search=+${endPoint}, options)
+    .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      setContainer(data.data)
+    })
+    .catch(err => console.error(err));
+
+  }
